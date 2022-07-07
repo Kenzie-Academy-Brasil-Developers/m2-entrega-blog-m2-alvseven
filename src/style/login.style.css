@@ -1,0 +1,94 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+    border: 1.5px solid #EEEEEE;
+    background-color: rgb(231, 231, 231);
+}
+
+h1 {
+    font-family: 'Secular One', sans-serif;
+    font-size: 5.5rem;
+}
+
+main {
+    width: 100vw;
+    height: 90vh;
+}
+
+.modal-login {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15rem;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+    background-color: #2D3540;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fffbfb;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 4%;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover {
+    transition: 150ms;
+    text-decoration: 1px underline rgb(233, 47, 47);
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 4%;
+}
+
+.logar{
+    width: 100%;
+    height: 100%;
+}
+
+.btn-login {
+    width: inherit;
+    height: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    background-color: #F2CE1B;
+    color: #2D3540;
+    border-radius: 1rem;
+    cursor: pointer;
+}

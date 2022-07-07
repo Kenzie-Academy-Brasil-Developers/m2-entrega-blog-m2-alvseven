@@ -1,0 +1,147 @@
+.user-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 7vh;
+    background-color: rgb(120, 226, 191);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    gap: 1.5rem;
+}
+
+.user h2 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+}
+
+img {
+    border-radius: 5rem;
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 50%;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+
+}
+
+.btn-logout {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.5rem;
+    color: #EEEEEE;
+    background-color:tomato;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    width: 7rem;
+    height: 3.5rem;
+}
+
+.criar-post {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    height: 20vw;
+    margin: 2rem auto;
+}
+
+.criar-post textarea {
+    width: 95%;
+    height: 85%;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    border: 1px solid slategrey;
+}
+
+.adicionar-post {
+    font-size: 1.1rem;
+    font-family: monospace;
+    width: 20%;
+    height: 25%;
+    margin: 0.5rem auto;
+    background-color: #45e0b2;
+    color: #FFFFFF;
+    border: 1px solid silver;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    height: 80vw;
+    margin: 4rem auto;
+    gap: 3rem;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 25%;
+    max-height: 35%;
+    gap: 1.2rem;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.post-usuario {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 1rem;
+}
+
+.post-text {
+    margin-bottom: 1rem;
+}
+
+.post-usuario h3 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2.5rem;
+    color: rgb(72, 216, 67);
+}
+
+.post-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.post-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.post-buttons button {
+    border: 1px solid transparent;
+    background-color: #FFFFFF;
+}
+
+.editar-post {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(75, 200, 231);
+}
+
+.apagar-post {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: tomato;
+}
