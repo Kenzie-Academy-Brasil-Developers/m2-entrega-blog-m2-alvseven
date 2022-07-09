@@ -11,12 +11,9 @@ function fazerLogin () {
 
         const userId = localStorage.getItem("@kenzie-blog:userId")
         const token  = localStorage.getItem("@kenzie-blog:token")
-        const url = (window.location.href).split("/")
-        url[5] = "homepage.html"
-        const filteredUrl = url.join("/")
 
         if (userId && token) {
-            window.location.href = `${filteredUrl}`
+            location.replace("/src/pages/homepage.html")
         }
 
     })

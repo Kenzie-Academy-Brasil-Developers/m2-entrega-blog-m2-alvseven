@@ -21,7 +21,7 @@ async function listenerCadastro () {
     
         const cadastro = await Cadastro.cadastrar(data)
         if (cadastro.id) {
-           window.location.href = "/src/pages/login.html"
+           location.replace("/src/pages/login.html")
         }
     })
 
