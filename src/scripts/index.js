@@ -21,7 +21,7 @@ async function listenerCadastro () {
     
         const cadastro = await Cadastro.cadastrar(data)
         if (cadastro.id) {
-           location.replace("m2-entrega-blog-m2-alvseven/src/pages/login.html")
+           window.location.href = "https://kenzie-academy-brasil-developers.github.io/m2-entrega-blog-m2-alvseven/src/pages/login.html"
         }
     })
 

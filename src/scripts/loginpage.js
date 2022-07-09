@@ -13,7 +13,7 @@ function fazerLogin () {
         const token  = localStorage.getItem("@kenzie-blog:token")
 
         if (userId && token) {
-            location.replace("/homepage.html")
+           window.location.href = "https://kenzie-academy-brasil-developers.github.io/m2-entrega-blog-m2-alvseven/src/pages/homepage.html"
         }
 
     })
