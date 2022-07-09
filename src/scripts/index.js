@@ -24,7 +24,7 @@ async function listenerCadastro () {
         const filteredUrl = url.slice(0, 3).join("/")
 
         if (cadastro.id) {
-           window.location.href = `${filteredUrl}/src/pages/login.html`
+           window.location.href = `${filteredUrl}m2-entrega-blog-m2-alvseven/src/pages/login.html`
         }
     })
 
