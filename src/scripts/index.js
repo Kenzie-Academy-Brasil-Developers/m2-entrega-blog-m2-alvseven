@@ -21,7 +21,7 @@ async function listenerCadastro () {
     
         const cadastro = await Cadastro.cadastrar(data)
         if (cadastro.id) {
-           location.replace("../src/pages/login.html")
+           location.replace("m2-entrega-blog-m2-alvseven/src/pages/login.html")
         }
     })
 
