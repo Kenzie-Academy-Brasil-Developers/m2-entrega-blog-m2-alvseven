@@ -4,13 +4,12 @@
     justify-content: center;
     width: 100vw;
     height: 10vh;
-    border: 1.5px solid #EEEEEE;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(221, 221, 221);
 }
 
 h1 {
     font-family: 'Secular One', sans-serif;
-    font-size: 5.5rem;
+    font-size: 2.5rem;
 }
 
 main {
@@ -23,20 +22,21 @@ main {
     height: 100%;
     margin: 0 auto;
 }
+
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 15rem;
+    padding-top: 4rem;
     width: 100%;
     height: 100%;
-    gap: 2.5rem;
+    gap: 2rem;
     background-color: #2D3540;
 }
 
 h2 {
     font-family: 'Roboto Slab', serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
     color: #fffbfb;
 }
@@ -45,8 +45,8 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
-    height: 5%;
+    width: 70%;
+    height: 6%;
 }
 
 input {
@@ -57,22 +57,24 @@ input {
 }
 
 a {
-    font-size: 1.1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
     text-decoration: none;
-    color: #FFFFFF;
+    color: rgb(221, 221, 221);
 }
 
 a:hover {
     transition: 150ms;
-    text-decoration: 1px underline rgb(233, 47, 47);
+    text-decoration: 1px underline  #F2CE1B;
 }
 
 .cadastro {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 25%;
-    height: 5%;
+    width: 45%;
+    height: 8%;
 }
 
 .cadastrar{
@@ -84,11 +86,61 @@ a:hover {
     width: inherit;
     height: inherit;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 700;
     padding: 0.5rem;
     background-color: #F2CE1B;
-    color: #2D3540;
-    border-radius: 1rem;
+    color: #2c2929;
+    border-radius: 1.5rem;
+    border: 1px solid transparent;
     cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+
+    .logo {
+        height: 20vh;
+    }
+
+    h1 {
+        font-family: 'Secular One', sans-serif;
+        font-size: 3.5rem;
+    }
+
+    main {
+        height: 80vh;
+    }
+
+    form {
+        padding-top: 2.5rem;
+        gap: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        color: #ffffff;
+    }
+
+    .input {
+        height: 9%;
+    }
+        
+
+    a {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+
+    .cadastro {
+        width: 25%;
+        height: 10%;
+    }
+    
+    .btn-cadastrar {
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 0.5rem;
+        border: 1px solid transparent;
+    }
+    
 }
