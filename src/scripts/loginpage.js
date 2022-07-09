@@ -13,7 +13,7 @@ function fazerLogin () {
         const token  = localStorage.getItem("@kenzie-blog:token")
 
         if (userId && token) {
-            location.replace("m2-entrega-blog-m2-alvseven/src/pages/login.html")
+            location.replace("./homepage.html")
         }
 
     })
