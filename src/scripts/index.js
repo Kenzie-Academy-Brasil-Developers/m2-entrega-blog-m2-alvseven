@@ -20,8 +20,11 @@ async function listenerCadastro () {
         }
     
         const cadastro = await Cadastro.cadastrar(data)
+        const url = (window.location.href).split("/")
+        const filteredUrl = url.slice(0, 3).join("/")
+
         if (cadastro.id) {
-           window.location.href = "https://kenzie-academy-brasil-developers.github.io/m2-entrega-blog-m2-alvseven/src/pages/login.html"
+           window.location.href = `${filteredUrl}/src/pages/login.html`
         }
     })
 

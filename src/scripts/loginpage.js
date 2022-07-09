@@ -11,9 +11,11 @@ function fazerLogin () {
 
         const userId = localStorage.getItem("@kenzie-blog:userId")
         const token  = localStorage.getItem("@kenzie-blog:token")
+        const url = (window.location.href).split("/")
+        const filteredUrl = url.slice(0, 3).join("/")
 
         if (userId && token) {
-           window.location.href = "https://kenzie-academy-brasil-developers.github.io/m2-entrega-blog-m2-alvseven/src/pages/homepage.html"
+           window.location.href = `${filteredUrl}/src/pages/homepage.html`
         }
 
     })
