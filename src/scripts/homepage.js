@@ -1,8 +1,6 @@
 import { Posts } from "../models/Posts.js"
 import { Api } from "../controller/Requisicoes.js"
 
-Posts.renderizarPosts()
-
 class Homepage { 
 
     static userId      = localStorage.getItem("@kenzie-blog:userId")
@@ -10,7 +8,7 @@ class Homepage {
     static url         = (window.location.href).split("/")
     static filteredUrl = this.url.slice(0, 3).join("/")
 
-    static verifyLogin () {
+    static async verifyLogin () {
 
         if (this.token === null || this.userId === null) {
             window.location.href = `${this.filteredUrl}/m2-entrega-blog-m2-alvseven/src/pages/login.html`
@@ -93,8 +91,9 @@ class Homepage {
         body.removeChild(modal)
     }
 
-    static main () {
-        Homepage.verifyLogin()
+    static async main () {
+        await Homepage.verifyLogin()
+        await Posts.renderizarPosts()
         Homepage.showUser()
         Homepage.logout()
         Homepage.addPost()
@@ -104,7 +103,6 @@ class Homepage {
 }
 
 Homepage.main()
-
 
 // function verifyLogin () {
 //     const userId = localStorage.getItem("@kenzie-blog:userId")
