@@ -24,6 +24,7 @@ class Homepage {
     
         userName.innerText = userProfile.username
         img.src = userProfile.avatarUrl
+        
     }
 
     static logout () {
@@ -62,6 +63,7 @@ class Homepage {
                 this.modal()
             }
         })
+
     }
 
     static modal () {
@@ -86,18 +88,22 @@ class Homepage {
     }
 
     static removeModal () {
+
         const modal = document.querySelector(".modal-container")
         const body = document.querySelector("body")
         body.removeChild(modal)
+
     }
 
     static async main () {
+
         await Homepage.verifyLogin()
-        await Posts.renderizarPosts()
+        Posts.renderizarPosts()
         Homepage.showUser()
         Homepage.logout()
         Homepage.addPost()
         Homepage.editPost()
+
     }
     
 }

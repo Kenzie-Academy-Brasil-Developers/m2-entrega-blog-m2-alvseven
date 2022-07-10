@@ -8,6 +8,7 @@ class Login {
             password
         }
         await Api.login(dados)
+        
     }
 }
 

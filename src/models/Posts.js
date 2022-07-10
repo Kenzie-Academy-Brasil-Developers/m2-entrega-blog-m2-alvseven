@@ -71,6 +71,7 @@ class Posts {
     }
     
     static async renderizarPosts () {
+        
         document.querySelector("section").innerHTML = ''
         this.data = await Api.listarPosts()
         this.data.forEach((element) => {
@@ -86,6 +87,7 @@ class Posts {
         }
         await Api.criarPost(dados)
         await this.renderizarPosts()
+
     }
 
     static async modalEditarPost (id) {

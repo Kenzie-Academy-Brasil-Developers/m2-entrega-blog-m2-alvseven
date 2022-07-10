@@ -4,6 +4,7 @@ class Api {
     static token = JSON.parse(localStorage.getItem("@kenzie-blog:token"))
 
     static async cadastrarUsuario (user_data) {
+
         return await fetch(`${this.base_url}/users/register`, {
             method: "POST",
             headers: {
@@ -38,9 +39,11 @@ class Api {
             return res
         })
         .catch(err => console.log(err))
+
     }
 
     static async pegarUsuario (id) {
+
         return await fetch(`${this.base_url}/users/${id}`, {
             method: "GET",
             headers: {
@@ -50,9 +53,11 @@ class Api {
         })
         .then(res => res.json())
         .catch(err => console.log(err))
+
     }
 
     static async listarPosts () {
+
         return await fetch(`${this.base_url}/posts?page=1`, {
             method: "GET",
             headers: {
@@ -62,10 +67,12 @@ class Api {
         })
         .then(res => res.json())
         .then(res => res.data)
-        .catch(err => console.log(err))     
+        .catch(err => console.log(err))    
+
     }
 
     static async mostrarPostEspecifico (id) {
+        
         return await fetch(`${this.base_url}/posts/${id}`, {
             method: "GET",
             headers: {
@@ -75,6 +82,7 @@ class Api {
         })
         .then(res => res.json())
         .catch(err => console.log(err))
+
     }
 
     static async criarPost (data) {
@@ -104,6 +112,7 @@ class Api {
         })
         .then(res => res.json())
         .catch(err => console.log(err))
+
     }
 
     static async deletarPost (id) {
@@ -116,6 +125,7 @@ class Api {
             }
         })
         .catch(err => console.log(err))
+        
     }
 
 }
