@@ -15,7 +15,7 @@ function fazerLogin () {
         const filteredUrl = url.slice(0, 3).join("/")
 
         if (userId && token) {
-           window.location.href = `${filteredUrl}/src/pages/homepage.html`
+            window.location.href = `${filteredUrl}/m2-entrega-blog-m2-alvseven/src/pages/homepage.html`
         }
 
     })
