@@ -7,7 +7,7 @@ class Login {
             email,
             password
         }
-        await Api.login(dados)
+        Api.login(dados)
         
     }
 }

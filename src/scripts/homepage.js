@@ -10,7 +10,7 @@ class Homepage {
 
     static async verifyLogin () {
 
-        if (this.token === null || this.userId === null) {
+        if (this.token === undefined || this.userId === undefined) {
             window.location.href = `${this.filteredUrl}/m2-entrega-blog-m2-alvseven/src/pages/login.html`
         }
 
