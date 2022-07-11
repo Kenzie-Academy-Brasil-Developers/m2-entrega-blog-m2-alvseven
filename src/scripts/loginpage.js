@@ -7,7 +7,7 @@ class Loginpage {
     static url         = (window.location.href).split("/")
     static filteredUrl = this.url.slice(0, 3).join("/")
 
-    static fazerLogin () {
+    static async fazerLogin () {
 
         const btn = document.querySelector(".btn-login")
         btn.addEventListener("click", async (event) => {
@@ -17,7 +17,7 @@ class Loginpage {
             const password = document.querySelector(".input-senha").value
             await Login.logar(email, password)
         
-            if (this.userId && this.token) {
+            if (this.token != undefined) {
                 window.location.href = `${this.filteredUrl}/m2-entrega-blog-m2-alvseven/src/pages/homepage.html`
             }
 
