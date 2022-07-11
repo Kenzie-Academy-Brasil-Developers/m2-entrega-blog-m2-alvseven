@@ -10,7 +10,7 @@ class Homepage {
 
     static async verifyLogin () {
 
-        if (this.token === undefined || this.userId === undefined) {
+        if (this.token === null || this.userId === null) {
             window.location.href = `${this.filteredUrl}/m2-entrega-blog-m2-alvseven/src/pages/login.html`
         }
 
@@ -46,7 +46,7 @@ class Homepage {
         const text = document.querySelector("textarea")
              await Posts.createPost(text.value)
              text.value = ''
-             await Posts.renderizarPosts()
+             Posts.renderizarPosts()
         })
 
     }
@@ -98,8 +98,8 @@ class Homepage {
     static async main () {
 
         await Homepage.verifyLogin()
-        await Homepage.showUser()
-        await Posts.renderizarPosts()
+        Posts.renderizarPosts()
+        Homepage.showUser()
         Homepage.logout()
         Homepage.addPost()
         Homepage.editPost()

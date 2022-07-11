@@ -5,7 +5,7 @@ class Loginpage {
     static url         = (window.location.href).split("/")
     static filteredUrl = this.url.slice(0, 3).join("/")
 
-    static async fazerLogin () {
+    static fazerLogin () {
 
         const btn = document.querySelector(".btn-login")
         btn.addEventListener("click", async (event) => {
@@ -14,11 +14,11 @@ class Loginpage {
             const email = document.querySelector(".input-email").value
             const password = document.querySelector(".input-senha").value
             await Login.logar(email, password)
-
+        
             const userId = localStorage.getItem("@kenzie-blog:userId")
             const token  = localStorage.getItem("@kenzie-blog:token")
 
-            if (userId !== undefined && token !== undefined) {
+            if (userId && token) {
                 window.location.href = `${this.filteredUrl}/m2-entrega-blog-m2-alvseven/src/pages/homepage.html`
             }
 

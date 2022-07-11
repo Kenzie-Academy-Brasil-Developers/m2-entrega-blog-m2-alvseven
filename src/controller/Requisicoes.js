@@ -30,13 +30,12 @@ class Api {
             return res.json()
         })
         .then((res) => {
-            if (res.userId) {
+            if (res.userId ) {
                 localStorage.setItem("@kenzie-blog:userId", JSON.stringify(res.userId))
             } 
             if (res.token){
                 localStorage.setItem("@kenzie-blog:token", JSON.stringify(res.token))
             }
-            console.log(this.token)
             return res
         })
         .catch(err => console.log(err))
