@@ -46,7 +46,7 @@ class Homepage {
         const text = document.querySelector("textarea")
              await Posts.createPost(text.value)
              text.value = ''
-             Posts.renderizarPosts()
+             await Posts.renderizarPosts()
         })
 
     }
@@ -98,8 +98,8 @@ class Homepage {
     static async main () {
 
         await Homepage.verifyLogin()
-        Posts.renderizarPosts()
-        Homepage.showUser()
+        await Homepage.showUser()
+        await Posts.renderizarPosts()
         Homepage.logout()
         Homepage.addPost()
         Homepage.editPost()
